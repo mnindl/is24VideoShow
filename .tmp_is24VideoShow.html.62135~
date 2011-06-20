@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="description" content="is24VideoShow" />
+    <meta name="keywords" content="Umzug" />
+    <meta name="author" content="" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="css/reset_min.css" type="text/css" rel="stylesheet"/>
+    <link href="css/is24VideoShow.css" type="text/css" rel="stylesheet"/>
+    <title>is24VideoShow</title>
+  </head>
+  <body class="is24VideoShow">
+    <iframe width="560" height="349" src="http://www.youtube.com/embed/m8o4NQpKH5U" frameborder="0" allowfullscreen></iframe>
+    <script type="text/javascript" src="js/jquery-1.5.1.min.js"></script>
+    <script type="text/javascript" src="js/is24VideoShow.js"></script>
+  </body>
+</html>

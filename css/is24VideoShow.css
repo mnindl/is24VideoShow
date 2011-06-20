@@ -1,0 +1,52 @@
+.is24VideoShow {
+  color: #949496;
+  font: 10px/1.33333 Verdana,"DejaVu Sans",Arial,Helvetica,sans-serif;
+  overflow: hidden;
+  width: 762px;
+}
+.is24VideoShow ul {
+  list-style: none;
+}
+.is24VideoShow a {
+  outline: none;
+  color: #0044CC;
+}
+.is24VideoShow .clear{ clear:both; float: none !important; margin: 0 !important; display:block; overflow:hidden; visibility:hidden; width: 0 !important; height: 0 !important }
+.is24VideoShow .hidden { display: none; height: 0px; overflow: hidden; }
+.is24VideoShow .video_holder {
+  float: left;
+  width: 380px;
+}
+.is24VideoShow .videos_holder {
+  float: left;
+  width: 342px;
+}
+.is24VideoShow .videos_holder_list {
+  height: 355px;
+  overflow: hidden;
+  position: absolute;
+}
+.is24VideoShow .videos_holder ul {
+  position: relative;
+}
+.is24VideoShow .videos_holder li {
+  clear: both;
+  height: 90px;
+}
+.is24VideoShow .videos_holder img {
+  width: 100px;
+  height: 80px;
+  display: block;
+  float: left;
+}
+.is24VideoShow .videos_holder li div {
+  float: left;
+  width: 242px;
+}
+.is24VideoShow button {
+  display: block;
+}
+.is24VideoShow #videos_show_down {
+  position: relative;
+}
+
