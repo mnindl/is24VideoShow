@@ -19,7 +19,7 @@ IS24Video.videoTool = (function () {
       $(this).prev().find('.border_holder').removeClass('inactive');
       $(this).find('.border_holder').removeClass('inactive').addClass('active');
     });
-    $('#videos_show_up').mousedown( function (){
+    $('#videos_show_up').click( function (){
       $(this).attr('disabled', 'disabled');
       var top = parseInt($('.videos_holder_list ul').css('top'), 10);
       //console.log(top);
