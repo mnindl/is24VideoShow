@@ -8,13 +8,14 @@ IS24Video.videoTool = (function () {
       max_scroll_down_height = -(list_height - show_items_height);
   // initial value for top (default ff is 0 ..other auto);
   $('.videos_holder_list ul').css('top', 0);
-  console.log(max_scroll_down_height);
 
   function initEventHandler () {
     $('.videos_holder li').click( function () {
       $('#is24_video').attr('src', $(this).attr('data-videourl'));
       $('.video_holder h1').html($(this).find('h3').html());
       $('.video_holder p').html($(this).find('p').html());
+      $('.video_holder .contenturl').attr('href', $(this).attr('data-contenturl'));
+      $('.video_holder .contenturl').html($(this).attr('data-contenturl_text'));
       $('.videos_holder li .border_holder').removeClass('active').addClass('inactive');
       $(this).prev().find('.border_holder').removeClass('inactive');
       $(this).find('.border_holder').removeClass('inactive').addClass('active');
@@ -22,7 +23,6 @@ IS24Video.videoTool = (function () {
     $('#videos_show_up').click( function (){
       $(this).attr('disabled', 'disabled');
       var top = parseInt($('.videos_holder_list ul').css('top'), 10);
-      //console.log(top);
       if (top < 0 ){
         $('.videos_holder_list ul').animate({ top: '+='+item_height+'px'},
         {
@@ -69,7 +69,7 @@ IS24Video.videoTool = (function () {
                                                 $(this).css( 'background-position', '0 2px');
                                               });
             var top = parseInt($('.videos_holder_list ul').css('top'), 10);
-            console.log(top);
+            //console.log(top);
             if (top <= max_scroll_down_height) {
               $('#videos_show_down').css({
                      cursor: 'default',
@@ -96,7 +96,7 @@ IS24Video.videoTool = (function () {
                                                        cursor: 'default',
                                                        backgroundPosition: '0 -54px'
                                                       });
-    console.log($('.videos_holder li').size());
+    //console.log($('.videos_holder li').size());
     if ( $('.videos_holder li').size() > 5 ) {
       $('#videos_show_down').css('top', show_items_height ).removeAttr('disabled').hover(
       function () {
